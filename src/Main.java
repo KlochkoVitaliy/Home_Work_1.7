@@ -34,5 +34,35 @@ public class Main {
         String lastName2 = " Иванов";
         String fullName3 = lastName2 + " " + firstName2 + " " + middleName2;
         System.out.println(ANSI_YELLOW + "Данные ФИО сотрудника — " + fullName3.replace('ё', 'е') + ANSI_RESET);
+
+        //Task 3 / Method Index
+        System.out.println(ANSI_GREEN + "Задание № 3 - " + ANSI_RESET + ANSI_PURPLE + "Method Index" + ANSI_RESET);
+
+        String fulleName = "Иванов Семён Семёнович";
+        int simbol = fulleName.indexOf("ё");
+        if (simbol == -1) {
+        } else {
+            fulleName = fulleName.replace('ё', 'е');
+        }
+        System.out.println(ANSI_YELLOW + "Данные ФИО сотрудника — " + fulleName + ANSI_RESET);
+
+        //Task 3 / Method Contains
+        System.out.println(ANSI_GREEN + "Задание № 3 - " + ANSI_RESET + ANSI_PURPLE + "Method Contains" + ANSI_RESET);
+
+        String fulleName2 = "Иванов Семён Семёнович";
+        if (fulleName2.contains("ё")) {
+            fulleName2 = fulleName2.replace('ё', 'е');
+        }
+        System.out.println(ANSI_YELLOW + "Данные ФИО сотрудника — " + fulleName2 + ANSI_RESET);
+
+        //Task 3 / Method Split
+        System.out.println(ANSI_GREEN + "Задание № 3 - " + ANSI_RESET + ANSI_PURPLE + "Method Split" + ANSI_RESET);
+
+        String fulleName3 = "Иванов Семён Семёнович";
+        for (String name : fulleName3.split(" ", 1)) {
+            fulleName3 = fulleName3.replace('ё', 'е');
+        }
+        System.out.println(ANSI_YELLOW + "Данные ФИО сотрудника — " + fulleName3 + ANSI_RESET);
+
     }
 }
